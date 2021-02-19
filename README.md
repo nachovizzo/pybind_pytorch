@@ -14,7 +14,14 @@ leveraging on the power of PyTorch tools.
 
 ## How to build and run this
 
-This is the **most** exciting part. Just clone this repo and run this command
+This is the **most** exciting part. Just run this command:
+
+```shell
+pip3 install git+https://github.com/nachovizzo/pybind_pytorch
+```
+
+If you are not that lazy to ask pip to clone the repo for you, you could do
+instead:
 
 ```sh
 pip3 install -e . -r requirements.txt

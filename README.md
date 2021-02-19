@@ -17,7 +17,7 @@ leveraging on the power of PyTorch tools.
 This is the **most** exciting part. Just clone this repo and run this command
 
 ```sh
-pip3 install -e . -r requirements.txt
+pip3 install -e pybind_torch -r requirements.txt
 ```
 
 This will basically build the `C++` extension that in my case looks something
@@ -111,16 +111,16 @@ your own.
 ### Simplicity
 
 Extremely simple, just a few lines of code of calling `C++` modules from Python.
-`cloc` reports something like only `11` lines of code for the whole project
+`cloc` reports something like only `9` lines of code for the whole project:
 
 ```sh
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-Python                           2              1              0              7
+Python                           1              1              0              5
 C++                              1              2              1              4
 -------------------------------------------------------------------------------
-SUM:                             3              3              1             11
+SUM:                             2              3              1              9
 -------------------------------------------------------------------------------
 ```
 
@@ -157,7 +157,7 @@ don't even need to clone that library.
 I guess the only real problem you might see is this one:
 
 ```shell
- python3 example.py
+$ python3 example.py
 Traceback (most recent call last):
   File "example.py", line 1, in <module>
     from pybind_torch import greet

@@ -17,7 +17,7 @@ leveraging on the power of PyTorch tools.
 This is the **most** exciting part. Just clone this repo and run this command
 
 ```sh
-pip3 install -e pybind_torch -r requirements.txt
+pip3 install -e . -r requirements.txt
 ```
 
 This will basically build the `C++` extension that in my case looks something
